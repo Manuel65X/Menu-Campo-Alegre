@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="icono" href="CAB.ico">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="Style.css">
+<script src="script.js">
+		function prev(){
+			document.getElementById('secciones-container').scrollLeft -= 270;
+	}
+		function next(){
+		document.getElementById('secciones-container').scrollLeft += 270;
+	}
+		$(".seccion img").on("click" , function(){
+			$(this).toggleClass('zoomed');
+				$(".overlay").toggleClass('active');
+	})		
+</script>
+<script src="https://kit.fontawesome.com/c0358935d5.js" crossorigin="anonymous"></script>
+	<title>Campo Alegre Bailador</title>
+</head>
+<body style="height: auto;">
+ <h2 id="Titulo">SECCIONES</a></h2>
+<div id="secciones-container" class="secciones">
+	<div class="seccion"><a href="Personal.html">
+			<div class="name">Personal</div>
+			<img src="personal.jpg" alt="Personal"></a>
+	</div>
+	<div class="seccion"><a href="para_picar.html">
+			<div class="name">Para Picar</div>
+			<img src="para_picar.jpg" alt=""></a>
+	</div>
+	<div class="seccion"><a href="Bebidasf.html">
+			<div class="name">Bebidas Frias</div>
+			<img src="bebidas_frias.jpg" alt=""></a>
+	</div>
+	<div class="seccion"><a href="bebidasc.html">
+			<div class="name">Bebidas Calientes</div>
+			<img src="bebidas_calientes.jpg" alt=""></a>
+	</div>
+	<div class="seccion"><a href="postres.html">
+		<div class="name"><p>Postres</p></div>
+			<img src="postres.jpg" alt=""></a>
+	</div>
+	<div class="seccion"><a href="cervezas.html">
+			<div class="name">Cervezas</div>
+			<img src="cervezas.jpg" alt=""></a>
+	</div>
+	<div class="seccion"><a href="cocteles.html">
+			<div class="name">Cocteles</div>
+			<img src="cocteles.jpg" alt=""></a>
+	</div>
+	<div class="seccion"><a href="tragos.html">
+			<div class="name">Tragos</div>
+			<img src="tragos.jpg" alt=""></a>
+	</div>
+	<div class="seccion"><a href="licores.html">
+			<div class="name">Licores</div>
+			<img src="licores.jpg" alt=""></a>
+	</div>
+	<div class="seccion"><a href="Sencillos.html">
+			<div class="name">Sencillos</div>
+			<img src="sencillos.jpg" alt=""></a>
+	</div>
+	<div class="seccion"><a href="Vinos.html">
+			<div class="name">Vinos</div>
+			<img src="vinos.jpg" alt=""></a>
+	</div>
+	<div class="seccion"><a href="Cigarrillos.html">
+			<div class="name">Cigarrillos</div>
+			<img src="cigarrillos.jpg" alt=""></a>
+	</div>
+	<div class="seccion"><a href="Adicionales.html">
+			<div class="name">Adicionales</div>
+			<img src="adicionales.jpg" alt=""></a>
+	</div>
+	<div onclick="prev()" class="control-prev-btn">
+		 <i class="fa-thin fa-circle-arrow-left"></i>
+	</div>
+	<div onclick="next()" class="control-next-btn">
+		<i class="fa-duotone fa-arrow-right"></i>
+	</div>
+		</div>
+	<div class="cont_footer"><footer>Derechos reservados a Campo Alegre Bailador</footer></div>
+	<div class="overlay"></div>
+</body>
+</html>	
